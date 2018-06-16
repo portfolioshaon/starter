@@ -2,7 +2,7 @@
 ## How to use
 For downloading use 
        git clone https://github.com/ShaonMajumder/starter.git
-Then, move only the project_update.bat in your desired project folder.
+Then, move only the project_update.bat/project_update.py in your desired project folder.
 You are then ready to go.
 ```
 When you want to start a project run project_update.bat/project_update.py

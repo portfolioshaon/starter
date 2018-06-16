@@ -5,8 +5,8 @@ For downloading use
 Then, move only the project_update.bat in your desired project folder.
 You are then ready to go.
 ```
-When you want to start a project run project_update.bat
-When you want to update a project in remote or want do a query run run project_update.bat
+When you want to start a project run project_update.bat/project_update.py
+When you want to update a project in remote or want do a query run run project_update.bat/project_update.py
 ```
 ## Feature
 - Git initializing and permanent setting

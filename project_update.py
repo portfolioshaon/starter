@@ -33,6 +33,7 @@ if not os.path.exists("prm"):
     cmd("git remote add "+repon+" "+repol)
 
 print(".....")
+print("\"update\" - for updating project to repository")
 print("\"git\" - for using git")
 print("\"query\" - for using google")
 
@@ -72,6 +73,32 @@ if command == "git" :
 	cmd("git add .")
 	cmd("git commit -m \""+umes+"\"")
 	cmd("git push -u "+repon+" master")
+elif command == "update" :
+    command = ""
+    
+    print("Retriving project remotename...")
+    with open("prm/project.log", "r") as f:
+        data = f.readlines()
+  
+    for c in data:
+        print c
+        if "remotename" in c:
+            start = c.find('[remotename:') + len('[remotename:')
+            end = c.find(']', start)
+            repon = c[start:end]
+            print("Retrived project name: %s"%repon)
+        elif "remotelink" in c:
+            start = c.find('[remotelink:') + len('[remotelink:')
+            end = c.find(']', start)
+            repon = c[start:end]
+            print("Retrived project link: %s"%repol)
+
+        
+    umes = raw_input("Commit Message:")
+    print("Pushing...")
+    cmd("git add .")
+    cmd("git commit -m \""+umes+"\"")
+    cmd("git push -u "+repon+" master")
 
 elif command == "query" :
     command = ""

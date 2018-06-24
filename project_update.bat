@@ -13,7 +13,7 @@ if not exist prm (
 	echo # !repon! > README.md
 	echo ## Download >> README.md
 	echo For downloading use >> README.md
-	echo        git clone !repol! >> README.md
+	echo        `git clone !repol!` >> README.md
 
 
 	git init
@@ -25,6 +25,7 @@ echo .....
 echo "update" - for updating project in repository
 echo "git" - for using git
 echo "query" - for using google
+
 SET /p  command=Give me a Command:
 
 IF "%command%" == "git" (

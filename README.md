@@ -11,7 +11,7 @@ When you want to update a project in remote or want do a query run run project_u
 ## Feature
 - Git initializing and permanent setting
 - Git Push
-- query saving for later use
-
+- query saving questions for later use
+- direct update with empty message
 ## Used Link
 Markdown Article: https://help.github.com/articles/basic-writing-and-formatting-syntax/
